@@ -1,6 +1,7 @@
 workflows:
     react-native:
         name: ImadApp
+        instance_type: linux
         environment:
             vars:
                 XCODE_WORKSPACE: "ImadApp"
