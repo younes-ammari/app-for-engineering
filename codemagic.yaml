@@ -15,7 +15,7 @@ workflows:
               echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
           - name: Build Android
             working_directory: android
-            script: ./gradlew assembleRelease
+            script: chmod +x gradlew assembleRelease
           - name: Build iOS
             script: |
               cd ios && pod install &&
